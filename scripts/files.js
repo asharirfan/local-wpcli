@@ -1,20 +1,16 @@
 /**
- * Utilities: Files
+ * Utility: Files
  */
 
-const fs = require('fs');
 const path = require('path');
+const touch = require('touch');
 
 module.exports = {
 	getCurrentDirectoryBase: () => {
 		return path.basename(process.cwd());
 	},
 
-	directoryExists: (filePath) => {
-		try {
-			return fs.statSync(filePath).isDirectory();
-		} catch (err) {
-			return false;
-		}
+	createFile(filename) {
+		touch(filename);
 	}
 };

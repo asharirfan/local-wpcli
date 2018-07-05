@@ -11,6 +11,9 @@
     "local-by-flywheel",
     "nodejs-cli"
   ],
+  "bin": {
+    "local-wpcli": "./index.js"
+  },
   "author": "asharirfan",
   "license": "GPL-3.0",
   "dependencies": {
