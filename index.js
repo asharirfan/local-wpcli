@@ -10,7 +10,7 @@
 const chalk = require('chalk');
 const clear = require('clear');
 const figlet = require('figlet');
-// const files = require('./scripts/files');
+const files = require('./scripts/files');
 const inquirer = require('./scripts/inquirer');
 const fs = require('fs');
 
@@ -30,31 +30,23 @@ const run = async () => {
 	const config_files = ['.dockerid', 'wp-cli.local.php', 'wp-cli.local.yml'];
 
 	config_files.forEach(function (filename) {
+		// Set file path.
+		const file_path = `process.cwd()}/${filename}`;
+
 		if (filename === '.dockerid') {
-			let data = websiteDetails.dockerId;
-			fs.writeFile(`${process.cwd()}/${filename}`, data, (err) => {
+			fs.writeFile(file_path, websiteDetails.dockerId, (err) => {
 				if (err) throw err;
 			});
 		} else if (filename === 'wp-cli.local.php') {
-			let data = `<?php
-define('DB_HOST', '${websiteDetails.remoteHostIP}:${websiteDetails.remoteHostPort}');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'root');
-
-// Only display fatal run-time errors.
-// See http://php.net/manual/en/errorfunc.constants.php.
-error_reporting(1);
-define( 'WP_DEBUG', false );
-`;
-			fs.writeFile(`${process.cwd()}/${filename}`, data, (err) => {
-				if (err) throw err;
-			});
+			fs.writeFile(
+				file_path,
+				files.local_php(websiteDetails.remoteHostIP, websiteDetails.remoteHostPort),
+				(err) => {
+					if (err) throw err;
+				}
+			);
 		} else if (filename === 'wp-cli.local.yml') {
-			let data = `path: app/public
-require:
-  - wp-cli.local.php
-`;
-			fs.writeFile(`${process.cwd()}/${filename}`, data, (err) => {
+			fs.writeFile(file_path, files.local_yml(), (err) => {
 				if (err) throw err;
 			});
 		}
