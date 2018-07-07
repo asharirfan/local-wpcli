@@ -8,19 +8,21 @@
  */
 
 const chalk = require('chalk');
-const clear = require('clear');
-const figlet = require('figlet');
 const files = require('./scripts/files');
 const inquirer = require('./scripts/inquirer');
 const fs = require('fs');
+const program = require('commander');
 
-clear();
+program
+	.version('0.1.0', '-v, --version')
+	.usage('[options]')
+	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
+	.parse(process.argv)
 
-console.log(
-	chalk.green(
-		figlet.textSync('Local-WPCLI', { horizontalLayout: 'full' })
-	)
-);
+let forceInstall = false;
+if (program.force) {
+	forceInstall = true;
+}
 
 const run = async () => {
 	const websiteDetails = await inquirer.askWebsiteDetails();
@@ -31,7 +33,7 @@ const run = async () => {
 
 	config_files.forEach(function (filename) {
 		// Set file path.
-		const file_path = `process.cwd()}/${filename}`;
+		const file_path = `${process.cwd()}/${filename}`;
 
 		if (filename === '.dockerid') {
 			fs.writeFile(file_path, websiteDetails.dockerId, (err) => {
