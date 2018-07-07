@@ -2,16 +2,11 @@
  * Utility: Files
  */
 
-const path = require('path');
-const touch = require('touch');
+const fs = require('fs');
 
 module.exports = {
-	getCurrentDirectoryBase: () => {
-		return path.basename(process.cwd());
-	},
-
-	createFile(filename) {
-		touch(filename);
+	fileExists(file) {
+		return fs.existsSync(file);
 	},
 
 	local_php: (ip, port) => {

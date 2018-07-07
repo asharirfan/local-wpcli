@@ -3,7 +3,6 @@
  */
 
 const inquirer = require('inquirer');
-// const files = require('./files');
 
 const userInput = (name, input_type, message, error) => (
 	{
