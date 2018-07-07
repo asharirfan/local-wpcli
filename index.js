@@ -8,9 +8,10 @@
  */
 
 const chalk = require('chalk');
-const inquirer = require('./scripts/inquirer');
 const program = require('commander');
-const install = require('./scripts/install')
+const inquirer = require('./scripts/inquirer');
+const install = require('./scripts/install');
+const test = require('./scripts/test');
 
 program
 	.version('0.1.0', '-v, --version')
@@ -32,7 +33,6 @@ const run = async () => {
 
 	await install(config_files, websiteDetails, forceInstall);
 
-	console.log(chalk.green('\n👍  All done.'));
-	console.log(chalk.green('\n✅  Try running a command with WP-CLI now.'));
+	await test();
 }
 run();
