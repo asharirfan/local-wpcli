@@ -1,10 +1,14 @@
 /**
- * Utility: Create Files.
+ * Create Files.
+ *
+ * Create the config files.
  *
  * @param array  - Array of config files.
  * @param object - Website details object.
  * @param bool   - Force overide.
  */
+
+'use strict';
 
 const chalk = require('chalk');
 const fs = require('fs');

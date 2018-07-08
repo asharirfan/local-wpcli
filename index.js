@@ -7,32 +7,32 @@
  * @since 0.1.0
  */
 
+'use strict';
+
 const chalk = require('chalk');
-const program = require('commander');
-const inquirer = require('./scripts/inquirer');
-const install = require('./scripts/install');
-const test = require('./scripts/test');
+const nodeVersion = process.versions.node;
+const semVer = nodeVersion.split('.');
+const major = semVer[0];
 
-program
-	.version('0.1.0', '-v, --version')
-	.usage('[options]')
-	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
-	.parse(process.argv)
-
-let forceInstall = false;
-if (program.force) {
-	forceInstall = true;
+// If below Node 8.
+if (major < 8) {
+	console.error(
+		chalk.red(
+			`You are running Node ${nodeVersion}
+Local-WPCLI requires Node 8 or higher.
+Kindly, update your version of Node.`
+		)
+	);
+	process.exit(1);
 }
 
-const run = async () => {
-	console.log(chalk.green('Setting up config files...\n'));
+// Crash the script on unhandled rejections.
+process.on('unhandledRejection', err => {
+	throw err;
+});
 
-	const websiteDetails = await inquirer.askWebsiteDetails();
-
-	const config_files = ['.dockerid', 'wp-cli.local.php', 'wp-cli.local.yml'];
-
-	await install(config_files, websiteDetails, forceInstall);
-
-	await test();
-}
+/**
+ * Run the CLI.
+ */
+const run = require('./app/run');
 run();

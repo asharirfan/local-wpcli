@@ -1,6 +1,10 @@
 /**
- * Utility: Files
+ * Files
+ *
+ * Config files related helper functions.
  */
+
+'use strict';
 
 const fs = require('fs');
 

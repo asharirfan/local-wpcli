@@ -1,6 +1,10 @@
 /**
- * Utility: User Input
+ * User Input
+ *
+ * Ask for the details of the website.
  */
+
+'use strict';
 
 const inquirer = require('inquirer');
 

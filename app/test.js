@@ -1,6 +1,10 @@
 /**
- * Utility: Test WP-CLI
+ * Test WP-CLI
+ *
+ * Test the CLI by running a WP-CLI command.
  */
+
+'use strict';
 
 const { exec } = require('child_process');
 const chalk = require('chalk');
