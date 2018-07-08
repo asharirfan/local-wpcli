@@ -21,7 +21,7 @@ const test = require('./test');
  *   3. -h or --help    — Show help.
  */
 program
-	.version('0.1.0', '-v, --version')
+	.version('0.2.0', '-v, --version')
 	.usage('[options]')
 	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
 	.parse(process.argv)
