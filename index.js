@@ -18,7 +18,7 @@ const major = semVer[0];
 if (major < 8) {
 	console.error(
 		chalk.red(
-			`You are running Node ${nodeVersion}
+			`⚠️  You are running Node ${nodeVersion}
 Local-WPCLI requires Node 8 or higher.
 Kindly, update your version of Node.`
 		)

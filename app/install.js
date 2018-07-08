@@ -10,7 +10,6 @@
 
 'use strict';
 
-const chalk = require('chalk');
 const fs = require('fs');
 const files = require('./files');
 
@@ -37,8 +36,6 @@ module.exports = (config_files, data, force) => {
 					if (err) throw err;
 				});
 			}
-		} else {
-			console.log(chalk.red(`\n❌  ${filename} already exists!`));
 		}
 	});
 };

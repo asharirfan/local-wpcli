@@ -8,6 +8,7 @@
 
 const chalk = require('chalk');
 const program = require('commander');
+const checkFiles = require('./checkFiles');
 const inquirer = require('./inquirer');
 const install = require('./install');
 const test = require('./test');
@@ -36,11 +37,14 @@ module.exports = async () => {
 	// Welcome message.
 	console.log(chalk.green('Setting up config files...\n'));
 
-	// Ask for the details of the website.
-	const websiteDetails = await inquirer.askWebsiteDetails();
-
 	// Config files array.
 	const config_files = ['.dockerid', 'wp-cli.local.php', 'wp-cli.local.yml'];
+
+	// Check if config files already exists.
+	await checkFiles(config_files);
+
+	// Ask for the details of the website.
+	const websiteDetails = await inquirer.askWebsiteDetails();
 
 	// Create the config files.
 	await install(config_files, websiteDetails, forceInstall);
