@@ -69,3 +69,6 @@ assets/sass/HTML
 assets/sass/Rails
 HTML
 Rails
+
+# VS Code.
+.vscode/
