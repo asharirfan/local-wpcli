@@ -1,4 +1,4 @@
-# 📦 local-wpcli (WIP)
+# ⚡ local-wpcli (WIP)
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
 ## 🚀 Getting Started!
@@ -13,11 +13,15 @@ To use `local-wpcli`,
 
 1. In your terminal, go to the root of the website folder.<br>	`cd ~/local-sites/local-wp/`
 2. Type `local-wpcli` & press enter.
-3. Before creating the configuration files, it will ask
-	1. Docker ID of your website.
-	2. Remote Host IP.
-	3. Remote Host Port.
-4. All done. You're good to go 👍
+3. Before creating the configuration files, it will ask for:
+	1. Remote Host IP.
+	2. Remote Host Port.
 
-## License & Copyrights
+👉 **Note:** To find out this information, refer to the screenshot below.
+
+![](https://cl.ly/ssYK/💯 "Local by Flywheel Screenshot")
+
+## License & Attribution
 MIT &copy; [Ashar Irfan](https://asharirfan.com).
+
+This project is inspired by [Create Guten Block](https://github.com/ahmadawais/create-guten-block). Thank you [Ahmad Awais](https://twitter.com/MrAhmadAwais) for Create Guten Block. It rocks 🤘
