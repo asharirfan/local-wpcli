@@ -1,4 +1,4 @@
-# ⚡ local-wpcli (WIP)
+# ⚡ local-wpcli
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
 ## 🚀 Getting Started!
