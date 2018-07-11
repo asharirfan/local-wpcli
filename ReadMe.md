@@ -14,14 +14,14 @@ To use `local-wpcli`,
 1. In your terminal, go to the root of the website folder.<br>	`cd ~/local-sites/local-wp/`
 2. Type `local-wpcli` & press enter.
 3. Before creating the configuration files, it will ask for:
-	1. Remote Host IP.
-	2. Remote Host Port.
+	1. Remote Host (IP Address)
+	2. Remote Port
 
 👉 **Note:** To find out this information, refer to the screenshot below.
 
 ![](https://cl.ly/ssYK/💯 "Local by Flywheel Screenshot")
 
-## License & Attribution
+## 🎩 License & Attribution
 MIT &copy; [Ashar Irfan](https://asharirfan.com).
 
 This project is inspired by [Create Guten Block](https://github.com/ahmadawais/create-guten-block). Thank you [Ahmad Awais](https://twitter.com/MrAhmadAwais) for Create Guten Block. It rocks 🤘
