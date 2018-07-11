@@ -19,11 +19,7 @@ module.exports = (config_files, data, force) => {
 		const file = `${process.cwd()}/${filename}`;
 
 		if (!files.fileExists(file) || force) {
-			if (filename === '.dockerid') {
-				fs.writeFile(file, data.dockerId, (err) => {
-					if (err) throw err;
-				});
-			} else if (filename === 'wp-cli.local.php') {
+			if (filename === 'wp-cli.local.php') {
 				fs.writeFile(
 					file,
 					files.local_php(data.remoteHostIP, data.remoteHostPort),

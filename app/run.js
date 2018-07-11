@@ -38,7 +38,7 @@ module.exports = async () => {
 	console.log(chalk.green('Setting up config files...\n'));
 
 	// Config files array.
-	const config_files = ['.dockerid', 'wp-cli.local.php', 'wp-cli.local.yml'];
+	const config_files = ['wp-cli.local.php', 'wp-cli.local.yml'];
 
 	// Check if config files already exists.
 	await checkFiles(config_files);
