@@ -17,7 +17,7 @@ To use `local-wpcli`,
 	1. Remote Host (IP Address)
 	2. Remote Port
 
-👉 **Note:** To find out this information, refer to the screenshot below.
+👉 **Note:** You can find Remote Host & Post in the *DATABASE* tab of the website in Local by Flywheel's desktop app. Please refer to the screenshot below for help.
 
 ![](https://cl.ly/ssYK/💯 "Local by Flywheel Screenshot")
 
