@@ -1,6 +1,6 @@
 {
   "name": "local-wpcli",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A CLI to configure WP-CLI with the websites of Local by Flywheel.",
   "main": "index.js",
   "repository": {
