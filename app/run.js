@@ -22,7 +22,7 @@ const test = require('./test');
  *   3. -h or --help    — Show help.
  */
 program
-	.version('0.3.1', '-v, --version')
+	.version('0.5.0', '-v, --version')
 	.usage('[options]')
 	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
 	.parse(process.argv)
@@ -40,8 +40,10 @@ module.exports = async () => {
 	// Config files array.
 	const config_files = ['wp-cli.local.php', 'wp-cli.local.yml'];
 
-	// Check if config files already exists.
-	await checkFiles(config_files);
+	// Check if config files already exists if force install is not set.
+	if (!forceInstall) {
+		await checkFiles(config_files);
+	}
 
 	// Ask for the details of the website.
 	const websiteDetails = await inquirer.askWebsiteDetails();
