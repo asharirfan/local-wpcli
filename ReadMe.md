@@ -19,7 +19,7 @@ To use `local-wpcli`,
 
 👉 **Note:** You can find *Remote Host* & *Port* in the `DATABASE` tab of the website in Local by Flywheel's desktop app. Please refer to the screenshot below for help.
 
-![](https://cl.ly/ssYK/💯 "Local by Flywheel Screenshot")
+![](https://cl.ly/681c5d672a00/💯 "Local by Flywheel Screenshot")
 
 ## 🎩 License & Attribution
 MIT &copy; [Ashar Irfan](https://asharirfan.com).
