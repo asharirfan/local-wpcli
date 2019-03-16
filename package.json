@@ -20,7 +20,7 @@
   "bin": {
     "local-wpcli": "./index.js"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.16.0",
