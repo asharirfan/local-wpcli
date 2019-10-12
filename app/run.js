@@ -12,6 +12,7 @@ const checkFiles = require('./checkFiles');
 const inquirer = require('./inquirer');
 const install = require('./install');
 const test = require('./test');
+const pgjson = require('../package.json');
 
 /**
  * Set the options for the CLI.
@@ -22,7 +23,7 @@ const test = require('./test');
  *   3. -h or --help    — Show help.
  */
 program
-	.version('0.6.1', '-v, --version')
+	.version(pgjson.version, '-v, --version')
 	.usage('[options]')
 	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
 	.parse(process.argv)
