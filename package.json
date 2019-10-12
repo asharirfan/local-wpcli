@@ -25,6 +25,7 @@
     "chalk": "^2.4.1",
     "commander": "^2.16.0",
     "inquirer": "^6.0.0",
+    "js-yaml": "^3.13.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
