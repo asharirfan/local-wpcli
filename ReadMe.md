@@ -1,6 +1,8 @@
 # ⚡ local-wpcli
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
+> This CLI does not support Local Lightning — latest major release — yet. Related issue for more information: [#13](https://github.com/asharirfan/local-wpcli/issues/13)
+
 ## 🚀 Getting Started!
 Use the following command to install `local-wpcli` globally.
 
