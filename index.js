@@ -27,8 +27,11 @@ Kindly, update your version of Node.`
 }
 
 // Crash the script on unhandled rejections.
-process.on('unhandledRejection', err => {
-	throw err;
+process.on('unhandledRejection', (reason) => {
+	console.log( // eslint-disable-line no-console
+		'Unhandled Rejection due to reason:',
+		reason
+	);
 });
 
 /**
