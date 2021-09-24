@@ -1,6 +1,0 @@
-{
-	"git.ignoreLimitWarning": true,
-	"phpcs.executablePath": "/usr/local/bin/phpcs",
-	"phpcs.standard": "WPAA",
-	"editor.formatOnSave": true
-}

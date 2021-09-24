@@ -16,7 +16,7 @@ const major = semVer[0];
 
 // If below Node 8.
 if (major < 8) {
-	console.error(
+	console.error( // eslint-disable-line no-console
 		chalk.red(
 			`⚠️  You are running Node ${nodeVersion}
 Local-WPCLI requires Node 8 or higher.
@@ -27,8 +27,11 @@ Kindly, update your version of Node.`
 }
 
 // Crash the script on unhandled rejections.
-process.on('unhandledRejection', err => {
-	throw err;
+process.on('unhandledRejection', (reason) => {
+	console.log( // eslint-disable-line no-console
+		'Unhandled Rejection due to reason:',
+		reason
+	);
 });
 
 /**

@@ -13,6 +13,7 @@ const inquirer = require('./inquirer');
 const install = require('./install');
 const test = require('./test');
 const pgjson = require('../package.json');
+const exit = require('./exit');
 
 /**
  * Set the options for the CLI.
@@ -26,7 +27,7 @@ program
 	.version(pgjson.version, '-v, --version')
 	.usage('[options]')
 	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
-	.parse(process.argv)
+	.parse(process.argv);
 
 // If force install option is set, then set it to true.
 let forceInstall = false;
@@ -35,8 +36,11 @@ if (program.force) {
 }
 
 module.exports = async () => {
+
 	// Welcome message.
-	console.log(chalk.green('Setting up config files...\n'));
+	console.log( // eslint-disable-line no-console
+		chalk.green('Setting up config files...\n')
+	);
 
 	// Config files array.
 	const config_files = ['wp-cli.local.php', 'wp-cli.local.yml'];
@@ -54,4 +58,7 @@ module.exports = async () => {
 
 	// Test the CLI by running a WP-CLI command.
 	await test();
-}
+
+	// Exit CLI.
+	await exit();
+};

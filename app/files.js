@@ -13,9 +13,9 @@ module.exports = {
 		return fs.existsSync(file);
 	},
 
-	local_php: (ip, port) => {
+	local_php: (socket) => {
 		return `<?php
-define('DB_HOST', '${ip}:${port}');
+define('DB_HOST', 'localhost:${socket}');
 define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
 

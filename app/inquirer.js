@@ -26,19 +26,14 @@ const userInput = (name, input_type, message, error) => {
 		message: message
 	};
 
-	if (name === 'remoteHostIP') {
-		// Set default IP if the question is for Remote Host.
-		question.default = '192.168.95.100';
-	} else if (name === 'remoteHostPort') {
-		// Set error message if the question is for Remote IP.
-		question.validate = function (value) {
-			if (value.length) {
-				return true;
-			} else {
-				return error;
-			}
-		};
-	}
+	// Set error message if the question is for Remote IP.
+	question.validate = function (value) {
+		if (value.length) {
+			return true;
+		} else {
+			return error;
+		}
+	};
 
 	// Return the question object.
 	return question;
@@ -50,8 +45,11 @@ module.exports = {
 	 */
 	askWebsiteDetails: () => {
 		const questions = [
-			userInput('remoteHostIP', 'input', 'Remote Host:', 'Please enter the IP address of the Remote Host.'), // Remote Host.
-			userInput('remoteHostPort', 'input', 'Remote Port:', 'Please enter the Port of the Remote Host.'), // Remote IP.
+			userInput(
+				'socket',
+				'input',
+				'Socket:', 'Please enter the socket of the database.'
+			), // Socket.
 		];
 		return inquirer.prompt(questions);
 	}
