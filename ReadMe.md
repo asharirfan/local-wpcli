@@ -3,9 +3,9 @@
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
 <div align="center">
-	<img src="https://img.shields.io/npm/v/local-wpcli?color=%251bb7b" alt="version">
-	<img src="https://img.shields.io/npm/l/local-wpcli?color=%251bb7b" alt="license">
-	<img src="https://img.shields.io/npm/dt/local-wpcli?color=%251bb7b" alt="downloads">
+	<img src="https://img.shields.io/npm/v/local-wpcli?color=21759b" alt="version">
+	<img src="https://img.shields.io/npm/l/local-wpcli?color=21759b" alt="license">
+	<img src="https://img.shields.io/npm/dt/local-wpcli?color=21759b" alt="downloads">
 </div>
 <br>
 
