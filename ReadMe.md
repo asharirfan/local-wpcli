@@ -2,9 +2,14 @@
 
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
-[![CLI version](https://img.shields.io/badge/version-2.0.0-brightgreen)](https://www.npmjs.com/package/local-wpcli)
-[![GitHub license](https://img.shields.io/github/license/asharirfan/local-wpcli)](https://github.com/asharirfan/local-wpcli/blob/main/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fasharirfan%2Flocal-wpcli)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fasharirfan%2Flocal-wpcli)
+<div align="center">
+	<img src="https://img.shields.io/npm/v/local-wpcli?color=%251bb7b" alt="version">
+	<img src="https://img.shields.io/npm/l/local-wpcli?color=%251bb7b" alt="license">
+	<img src="https://img.shields.io/npm/dt/local-wpcli?color=%251bb7b" alt="downloads">
+</div>
+<br>
+
+![cover](assets/local-wpcli-cover.jpg)
 
 > The CLI now works with Local Lightning! 🎉
 
@@ -26,7 +31,7 @@ To use `local-wpcli`,
 
 👉 *Note: You can find `Socket` in the `DATABASE` tab of the website in Local by Flywheel's desktop app. Please refer to the following screenshot below for help.*
 
-!["Local by Flywheel Screenshot"](https://i.imgur.com/raRKqTv.jpg "Local by Flywheel Screenshot")
+![Local by Flywheel Screenshot](assets/local-wpcli-screenshot.jpg)
 
 ## 🎩 License & Attribution
 
