@@ -27,7 +27,7 @@ program
 	.version(pgjson.version, '-v, --version')
 	.usage('[options]')
 	.option('-f, --force', 'Overide existing WP-CLI configuration files.')
-	.parse(process.argv)
+	.parse(process.argv);
 
 // If force install option is set, then set it to true.
 let forceInstall = false;
@@ -61,4 +61,4 @@ module.exports = async () => {
 
 	// Exit CLI.
 	await exit();
-}
+};

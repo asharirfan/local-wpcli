@@ -11,6 +11,6 @@ const exit = async () => {
 		github: 'https://github.com/asharirfan/local-wpcli',
 		twitter: 'https://twitter.com/MrAsharIrfan',
 		pkgJSON: pkgJson
-	})
-}
+	});
+};
 module.exports = exit;
