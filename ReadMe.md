@@ -2,7 +2,7 @@
 
 A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
 
-> The CLI now works with Local Lightning as well 🎉
+> The CLI now works with Local Lightning! 🎉
 
 ## 🚀 Getting Started!
 
@@ -16,7 +16,7 @@ npm install -g local-wpcli
 
 To use `local-wpcli`,
 
-1. Open terminal and go to the root of the website folder.<br>	`cd ~/local-sites/wordpress/`
+1. Open terminal and go to the root of the website folder.<br>`cd ~/local-sites/wordpress/`
 2. Type `local-wpcli` & press Enter (⏎).
 3. Enter path to **Socket** file of the website & press Enter (⏎).
 
