@@ -1,17 +1,14 @@
-# ⚡ local-wpcli
-
-A CLI to configure WP-CLI with the locally hosted websites of [Local by Flywheel](https://local.getflywheel.com/).
+![cover](assets/local-wpcli-cover.jpg)
 
 <div align="center">
+	<p>A CLI to configure WP-CLI with the locally hosted websites of <a href="https://local.getflywheel.com/">Local by Flywheel</a></p>
 	<img src="https://img.shields.io/npm/v/local-wpcli?color=21759b" alt="version">
 	<img src="https://img.shields.io/npm/l/local-wpcli?color=21759b" alt="license">
 	<img src="https://img.shields.io/npm/dt/local-wpcli?color=21759b" alt="downloads">
 </div>
 <br>
 
-![cover](assets/local-wpcli-cover.jpg)
-
-> The CLI now works with Local Lightning! 🎉
+> Update: The CLI now works with Local Lightning! 🎉
 
 ## 🚀 Getting Started!
 
