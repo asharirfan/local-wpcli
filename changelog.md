@@ -2,7 +2,7 @@
 
 ### v2.1.0
 
-- Updated ``inquirer` and `eslint` packages to latest versions
+- Updated `inquirer` and `eslint` packages to latest versions
 
 ### v2.0.0
 
