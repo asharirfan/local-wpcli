@@ -28,6 +28,8 @@ To use `local-wpcli`,
 
 👉 *Note: You can find `Socket` in the `DATABASE` tab of the website in Local by Flywheel's desktop app. Please refer to the following screenshot below for help.*
 
+4. At this point, you can run `wp` as you normally would.
+
 ![Local by Flywheel Screenshot](assets/local-wpcli-screenshot.jpg)
 
 ## 🎩 License & Attribution
