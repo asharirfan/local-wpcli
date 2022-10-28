@@ -8,7 +8,7 @@
 </div>
 <br>
 
-> Update: The CLI now works with Local Lightning! 🎉
+> The CLI now works with Local Lightning! 🎉
 
 ## 🚀 Getting Started!
 
@@ -26,7 +26,7 @@ To use `local-wpcli`,
 2. Type `local-wpcli` & press Enter (⏎).
 3. Enter path to **Socket** file of the website & press Enter (⏎).
 
-👉 *Note: You can find `Socket` in the `DATABASE` tab of the website in Local by Flywheel's desktop app. Please refer to the following screenshot below for help.*
+> 👉 *Note: You can find `Socket` in the `DATABASE` tab of the website in Local by Flywheel's desktop app. Please refer to the following screenshot below for help.*
 
 4. At this point, you can run `wp` as you normally would.
 
